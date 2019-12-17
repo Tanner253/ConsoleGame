@@ -31,5 +31,34 @@ namespace ConsoleGame
             }
 	
         }
+
+        public new static char UpdateCursor(string key){
+            switch(key){
+            case "Leftarrow":
+                return '<';
+                        break;
+            case "RightArrow":
+                    return '>';
+                    break;
+            case "UpArrow":
+                    return '^';
+                    break;
+            case "DownArrow":
+                    return 'v';
+                    break;
+            }
+        }
+        public new static int KeepInBounds(int coords, int maxVal){
+            if(coords > 10)
+            {
+            coords == 9;
+            }else if(coords < 0)
+            {
+            coords == 0;
+            }
+        }
+        public new static bool DidScore(int x, int y, int fx, int fy){
+            if(x == fx && y == fy);
+        }
   }
 }
